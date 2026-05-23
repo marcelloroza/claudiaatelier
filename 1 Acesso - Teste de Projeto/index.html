@@ -222,21 +222,21 @@
                     <p>Sonha com uma fantasia de Carnaval de destaque ou um vestido afro-chic sob medida para um casamento ou evento especial? Agende uma consultoria online ou presencial com nossa estilista. Criaremos um croqui único para você.</p>
                 </div>
                 
-                <form class="booking-form" id="booking-form">
+                <form class="booking-form" id="booking-form" action="https://formspree.io/f/mykvpbjg" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-input" id="booking-name" placeholder=" " required>
+                        <input type="text" class="form-input" id="booking-name" name="nome" placeholder=" " required>
                         <label class="form-label" for="booking-name">Nome Completo</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-input" id="booking-email" placeholder=" " required>
+                        <input type="email" class="form-input" id="booking-email" name="email" placeholder=" " required>
                         <label class="form-label" for="booking-email">E-mail para Contato</label>
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-input" id="booking-phone" placeholder=" " required>
+                        <input type="tel" class="form-input" id="booking-phone" name="telefone" placeholder=" " required>
                         <label class="form-label" for="booking-phone">WhatsApp / Telefone</label>
                     </div>
                     <div class="form-group">
-                        <select class="form-select" id="booking-type" required>
+                        <select class="form-select" id="booking-type" name="tipo_criacao" required>
                             <option value="" disabled selected hidden></option>
                             <option value="carnaval">Alta Costura - Carnaval (Fantasia / Body)</option>
                             <option value="afro">Moda Afro-Chic (Casamentos / Cerimônias)</option>
@@ -246,7 +246,7 @@
                         <label class="form-label" for="booking-type">Estilo de Criação</label>
                     </div>
                     <div class="form-group form-group-full">
-                        <textarea class="form-textarea" id="booking-details" placeholder=" " required></textarea>
+                        <textarea class="form-textarea" id="booking-details" name="detalhes" placeholder=" " required></textarea>
                         <label class="form-label" for="booking-details">Conte-nos sobre o seu projeto (cores, medidas, referências, prazo)</label>
                     </div>
                     

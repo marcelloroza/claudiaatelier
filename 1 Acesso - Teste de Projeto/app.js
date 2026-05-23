@@ -641,26 +641,50 @@ function initForms() {
     dom.bookingForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Simular envio
         dom.btnSubmitForm.disabled = true;
-        dom.btnSubmitForm.textContent = "Processando solicitação...";
+        dom.btnSubmitForm.textContent = "Enviando solicitação...";
 
-        setTimeout(() => {
-            dom.btnSubmitForm.style.display = 'none';
-            dom.formSuccess.style.display = 'block';
-            
-            showToast("Orçamento de alta costura solicitado!");
-            
-            // Resetar formulário após alguns segundos
-            setTimeout(() => {
+        const formData = new FormData(dom.bookingForm);
+
+        fetch("https://formspree.io/f/mykvpbjg", {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                dom.btnSubmitForm.style.display = 'none';
+                dom.formSuccess.style.display = 'block';
+                
+                showToast("Orçamento de alta costura solicitado!");
                 dom.bookingForm.reset();
-                dom.btnSubmitForm.style.display = 'block';
-                dom.btnSubmitForm.disabled = false;
-                dom.btnSubmitForm.textContent = "Enviar Solicitação";
-                dom.formSuccess.style.display = 'none';
-            }, 6000);
-
-        }, 1500);
+                
+                // Resetar formulário na tela após alguns segundos
+                setTimeout(() => {
+                    dom.btnSubmitForm.style.display = 'block';
+                    dom.btnSubmitForm.disabled = false;
+                    dom.btnSubmitForm.textContent = "Enviar Solicitação";
+                    dom.formSuccess.style.display = 'none';
+                }, 6000);
+            } else {
+                response.json().then(data => {
+                    if (data && data.errors) {
+                        showToast("Erro: " + data.errors.map(err => err.message).join(", "));
+                    } else {
+                        showToast("Ocorreu um erro ao enviar. Tente novamente.");
+                    }
+                    dom.btnSubmitForm.disabled = false;
+                    dom.btnSubmitForm.textContent = "Enviar Solicitação";
+                });
+            }
+        })
+        .catch(error => {
+            showToast("Erro de rede. Verifique sua conexão.");
+            dom.btnSubmitForm.disabled = false;
+            dom.btnSubmitForm.textContent = "Enviar Solicitação";
+        });
     });
 
     // 2. Formulário Newsletter
