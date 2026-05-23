@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia Atelier | Moda Carnaval & Afro-Chic Exclusiva</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Descubra a fusão entre a sofisticação da moda afro-chic e o brilho do carnaval de luxo no Claudia Atelier. Peças artesanais exclusivas e sob medida com tecidos nobres e acabamento de alta costura.">
+    <meta name="keywords" content="claudia atelier, moda afro, moda carnaval, alta costura, roupas sob medida, kaftan, vestido de carnaval, body paete, acessórios afro, samba, axé">
+    <meta name="author" content="Claudia Atelier">
+    
+    <!-- Open Graph (Facebook/Instagram) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Claudia Atelier | Moda Carnaval & Afro-Chic">
+    <meta property="og:description" content="Peças exclusivas feitas à mão com ancestralidade, axé e sofisticação. Coleções Afro-Chic e Carnaval de Luxo.">
+    <meta property="og:image" content="assets/hero_banner_afro.png">
+    
+    <!-- FontAwesome para ícones premium -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Folha de estilo personalizada -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE ANÚNCIOS ROTATIVA -->
+    <div class="announcement-bar" id="announcement-bar">
+        <div class="announcement-slider">
+            <div class="announcement-item active">
+                Frete grátis em compras acima de R$ 399 para todo o Brasil
+            </div>
+            <div class="announcement-item">
+                Peças sob medida para o <span>Carnaval 2027</span>. Reserve sua data!
+            </div>
+            <div class="announcement-item">
+                Parcele suas compras em até 6x sem juros no cartão
+            </div>
+        </div>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header id="main-header">
+        <div class="header-container">
+            <!-- Hambúrguer Mobile -->
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu de Navegação -->
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#" class="nav-link active" data-scroll="home">Início</a></li>
+                    <li><a href="#colecoes" class="nav-link" data-scroll="colecoes">Coleções</a></li>
+                    <li><a href="#produtos" class="nav-link" data-scroll="produtos">Produtos</a></li>
+                    <li><a href="#atelier" class="nav-link" data-scroll="atelier">O Atelier</a></li>
+                    <li><a href="#sob-medida" class="nav-link" data-scroll="sob-medida">Sob Medida</a></li>
+                </ul>
+            </nav>
+
+            <!-- Logo Central -->
+            <div class="logo-area">
+                <a href="#" class="logo-main">claudia<span>.</span>atelier</a>
+                <div class="logo-subtitle">moda carnaval & afro</div>
+            </div>
+
+            <!-- Utilitários (Carrinho, Busca, etc) -->
+            <div class="header-utils">
+                <button class="util-btn" id="search-toggle" aria-label="Buscar produtos">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="util-btn" id="account-btn" aria-label="Minha conta">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <button class="util-btn" id="cart-toggle" aria-label="Ver carrinho">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cart-counter">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL (CAROUSEL) -->
+    <section class="hero-slider" id="home">
+        <div class="slide-container" id="slide-container">
+            <!-- Slide 1: Afro-Chic -->
+            <div class="hero-slide active-slide" style="background-image: url('assets/hero_banner_afro.png');">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-tag">Nova Coleção</span>
+                        <h2 class="slide-title">Realeza <strong>Odara</strong></h2>
+                        <p class="slide-desc">Descubra a elegância dos tecidos nobres com estampas exclusivas que exaltam a ancestralidade africana em cortes modernos e sofisticados.</p>
+                        <a href="#produtos" class="btn-luxury btn-primary-color">Ver Coleção Afro</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: Carnaval de Luxo -->
+            <div class="hero-slide" style="background-image: url('assets/hero_banner_carnaval.png');">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-tag">Atelier Carnaval</span>
+                        <h2 class="slide-title">Brilho & <strong>Magia</strong></h2>
+                        <p class="slide-desc">Bodies bordados à mão, franjas metálicas e coroas majestosas criadas sob medida para você reinar na avenida com elegância e exclusividade.</p>
+                        <a href="#produtos" class="btn-luxury">Explorar Brilho</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: Processo Criativo -->
+            <div class="hero-slide" style="background-image: url('assets/about_atelier.png');">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-tag">Alta Costura</span>
+                        <h2 class="slide-title">Feito <strong>Com Alma</strong></h2>
+                        <p class="slide-desc">Cada peça é concebida como uma obra de arte. Visite o nosso processo artesanal e traga sua ideia para confeccionarmos juntas.</p>
+                        <a href="#sob-medida" class="btn-luxury">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles do Slider -->
+        <div class="slider-dots" id="slider-dots">
+            <span class="slider-dot active" data-index="0"></span>
+            <span class="slider-dot" data-index="1"></span>
+            <span class="slider-dot" data-index="2"></span>
+        </div>
+        <div class="slider-nav">
+            <button class="slider-arrow" id="prev-slide" aria-label="Slide Anterior">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <button class="slider-arrow" id="next-slide" aria-label="Próximo Slide">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CATEGORIAS EM DESTAQUE -->
+    <section class="section-padding container" id="colecoes">
+        <div class="section-header">
+            <span class="section-subtitle">Categorias</span>
+            <h2 class="section-title">Nossas Inspirações</h2>
+        </div>
+        
+        <div class="category-grid">
+            <!-- Categoria 1 -->
+            <div class="category-card">
+                <img src="assets/hero_banner_afro.png" alt="Moda Afro-Chic" class="category-img">
+                <div class="category-overlay">
+                    <h3 class="category-title">Moda Afro-Chic</h3>
+                    <a href="#produtos" class="category-link" data-filter="afro">Explorar Coleção <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Categoria 2 -->
+            <div class="category-card">
+                <img src="assets/hero_banner_carnaval.png" alt="Brilho de Carnaval" class="category-img">
+                <div class="category-overlay">
+                    <h3 class="category-title">Brilho de Carnaval</h3>
+                    <a href="#produtos" class="category-link" data-filter="carnaval">Explorar Coleção <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Categoria 3 -->
+            <div class="category-card">
+                <img src="assets/about_atelier.png" alt="Acessórios e Sob Medida" class="category-img">
+                <div class="category-overlay">
+                    <h3 class="category-title">Acessórios de Luxo</h3>
+                    <a href="#produtos" class="category-link" data-filter="acessorios">Explorar Detalhes <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VITRINE DE PRODUTOS FILTRÁVEL -->
+    <section class="section-padding container" style="background-color: var(--color-white-pure); border-top: 1px solid var(--color-border);" id="produtos">
+        <div class="section-header">
+            <span class="section-subtitle">Loja Online</span>
+            <h2 class="section-title">Peças Disponíveis</h2>
+        </div>
+
+        <!-- Filtros -->
+        <ul class="filter-bar">
+            <li><button class="filter-btn active" data-filter="all">Todos</button></li>
+            <li><button class="filter-btn" data-filter="afro">Moda Afro</button></li>
+            <li><button class="filter-btn" data-filter="carnaval">Carnaval</button></li>
+            <li><button class="filter-btn" data-filter="acessorios">Acessórios</button></li>
+        </ul>
+
+        <!-- Grid de Produtos -->
+        <div class="products-grid" id="products-grid">
+            <!-- Os produtos serão inseridos dinamicamente via JS com fotos e dados -->
+        </div>
+    </section>
+
+    <!-- SEÇÃO EDITORIAL - O ATELIER -->
+    <section class="section-padding editorial-section" id="atelier">
+        <div class="container editorial-grid">
+            <div class="editorial-img-container">
+                <img src="assets/about_atelier.png" alt="Claudia em seu Atelier" class="editorial-img">
+            </div>
+            <div class="editorial-content">
+                <span class="section-subtitle">Identidade & Tradição</span>
+                <h2 class="section-title" style="margin-bottom: 2rem;">A Alma do Claudia Atelier</h2>
+                <p class="editorial-quote">"Criar moda é costurar histórias de ancestralidade, trazendo o brilho das rainhas africanas e a magia dourada do carnaval para o corpo."</p>
+                <p class="editorial-text">Nascido da paixão pela rica cultura afro-brasileira e a grandiosidade estética do Carnaval, o Claudia Atelier confecciona peças que unem modelagens impecáveis, tecidos como linho, sedas puras e brocados a trabalhos manuais minuciosos de bordados e aplicação de paetês. Cada criação é projetada para ser única, empoderada e confortável.</p>
+                <p class="editorial-text" style="margin-bottom: 3rem;">Acreditamos no 'slow fashion' e na valorização das curvas femininas. Por isso, oferecemos uma curadoria especial de peças prontas em nossa loja e a experiência exclusiva de costura sob medida.</p>
+                <a href="#sob-medida" class="btn-luxury btn-primary-color">Conhecer Sob Medida</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE AGENDAMENTO / ORÇAMENTO SOB MEDIDA -->
+    <section class="section-padding booking-section" id="sob-medida">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" style="color: var(--color-yellow);">Exclusividade Atelier</span>
+                <h2 class="section-title">Costura Sob Medida</h2>
+            </div>
+            
+            <div class="booking-container">
+                <div class="booking-intro">
+                    <p>Sonha com uma fantasia de Carnaval de destaque ou um vestido afro-chic sob medida para um casamento ou evento especial? Agende uma consultoria online ou presencial com nossa estilista. Criaremos um croqui único para você.</p>
+                </div>
+                
+                <form class="booking-form" id="booking-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="booking-name" placeholder=" " required>
+                        <label class="form-label" for="booking-name">Nome Completo</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="booking-email" placeholder=" " required>
+                        <label class="form-label" for="booking-email">E-mail para Contato</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" id="booking-phone" placeholder=" " required>
+                        <label class="form-label" for="booking-phone">WhatsApp / Telefone</label>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-select" id="booking-type" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="carnaval">Alta Costura - Carnaval (Fantasia / Body)</option>
+                            <option value="afro">Moda Afro-Chic (Casamentos / Cerimônias)</option>
+                            <option value="resort">Resort Wear & Estampas Customizadas</option>
+                            <option value="outro">Outro Modelo Específico</option>
+                        </select>
+                        <label class="form-label" for="booking-type">Estilo de Criação</label>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <textarea class="form-textarea" id="booking-details" placeholder=" " required></textarea>
+                        <label class="form-label" for="booking-details">Conte-nos sobre o seu projeto (cores, medidas, referências, prazo)</label>
+                    </div>
+                    
+                    <div class="form-success-message" id="form-success">
+                        <i class="fa-solid fa-circle-check"></i> Seu pedido de orçamento foi enviado com sucesso! Entraremos em contato via WhatsApp nas próximas 24 horas.
+                    </div>
+                    
+                    <button type="submit" class="btn-form-submit" id="btn-submit-form">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE NEWSLETTER -->
+    <section class="section-padding newsletter-section">
+        <div class="container newsletter-container">
+            <span class="section-subtitle" style="color: var(--color-yellow);">Vantagens Exclusivas</span>
+            <h2 class="section-title">Inscreva-se na nossa Newsletter</h2>
+            <p class="newsletter-text">Inscreva-se para saber em primeira mão sobre os lançamentos de novas coleções de Carnaval, receber dicas de looks afro-chic e ganhar 10% de desconto na primeira compra.</p>
+            
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Seu melhor e-mail" required id="newsletter-email">
+                <button type="submit" class="btn-newsletter-submit">Quero Desconto</button>
+            </form>
+            <div class="newsletter-success" id="newsletter-success-msg">
+                <i class="fa-solid fa-gift"></i> Inscrição confirmada! Seu cupom <strong>ATELIER10</strong> foi enviado por e-mail.
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Logo e Descrição -->
+                <div class="footer-brand">
+                    <div class="footer-logo-main">claudia<span>.</span>atelier</div>
+                    <p class="footer-desc">Moda autoral feita sob medida com carinho, ancestralidade e tecidos nobres. Unindo o requinte da costura afro à luz pulsante do Carnaval.</p>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://pinterest.com" target="_blank" class="social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <!-- Coluna 2: Links de ajuda -->
+                <div>
+                    <h3 class="footer-title">Institucional</h3>
+                    <ul class="footer-links">
+                        <li><a href="#atelier" class="footer-link-item">Quem Somos</a></li>
+                        <li><a href="#sob-medida" class="footer-link-item">Costura Sob Medida</a></li>
+                        <li><a href="#" class="footer-link-item">Termos de Serviço</a></li>
+                        <li><a href="#" class="footer-link-item">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <!-- Coluna 3: Links de Loja -->
+                <div>
+                    <h3 class="footer-title">Coleções</h3>
+                    <ul class="footer-links">
+                        <li><a href="#produtos" class="footer-link-item">Moda Afro-Chic</a></li>
+                        <li><a href="#produtos" class="footer-link-item">Carnaval Luxo</a></li>
+                        <li><a href="#produtos" class="footer-link-item">Acessórios Exclusivos</a></li>
+                        <li><a href="#produtos" class="footer-link-item">Ver Tudo</a></li>
+                    </ul>
+                </div>
+                <!-- Coluna 4: Contato -->
+                <div>
+                    <h3 class="footer-title">Atelier Físico</h3>
+                    <div class="footer-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Av. Atlântica, Copacabana<br>Rio de Janeiro - RJ</span>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+55 (21) 98888-7777</span>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>contato@claudiaatelier.com.br</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>&copy; 2026 Claudia Atelier. Todos os direitos reservados. Feito com amor e axé.</div>
+                <div class="payment-methods">
+                    <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                    <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+                    <i class="fa-solid fa-money-bill-transfer" title="Pix"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GAVETA LATERAL DO CARRINHO (CART DRAWER) -->
+    <div class="cart-overlay-bg" id="cart-overlay">
+        <div class="cart-drawer" id="cart-drawer-panel">
+            <div class="cart-header">
+                <h3 class="cart-title">Minha Sacola</h3>
+                <button class="cart-close-btn" id="cart-close" aria-label="Fechar carrinho">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <!-- Barra de Frete Grátis -->
+            <div class="cart-shipping-info" id="cart-shipping-info">
+                <span id="shipping-message">Faltam R$ 399,00 para você ganhar Frete Grátis</span>
+                <div class="shipping-bar-bg">
+                    <div class="shipping-bar-fill" id="shipping-bar-fill"></div>
+                </div>
+            </div>
+            
+            <!-- Itens do Carrinho -->
+            <div class="cart-items-container" id="cart-items-list">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+            
+            <!-- Resumo e Compra -->
+            <div class="cart-footer">
+                <div class="cart-summary-line">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">R$ 0,00</span>
+                </div>
+                <div class="cart-summary-line">
+                    <span>Frete</span>
+                    <span id="cart-shipping-value">Calculado no checkout</span>
+                </div>
+                <div class="cart-summary-line total">
+                    <span>Total Estimado</span>
+                    <span id="cart-total">R$ 0,00</span>
+                </div>
+                <button class="btn-checkout" id="btn-cart-checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE VISUALIZAÇÃO RÁPIDA (QUICK VIEW) -->
+    <div class="modal-overlay" id="quickview-modal">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modal-close" aria-label="Fechar Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-gallery">
+                <img src="" alt="" class="modal-gallery-img" id="modal-img">
+            </div>
+            
+            <div class="modal-details">
+                <span class="modal-product-cat" id="modal-cat">Coleção</span>
+                <h3 class="modal-product-title" id="modal-title">Título do Produto</h3>
+                <div class="modal-product-price" id="modal-price">R$ 0,00</div>
+                <p class="modal-product-desc" id="modal-desc">Descrição detalhada do produto.</p>
+                
+                <!-- Selecionar Tamanhos -->
+                <div class="modal-options-title">Tamanho</div>
+                <div class="modal-sizes" id="modal-sizes-container">
+                    <button class="size-option" data-size="P">P</button>
+                    <button class="size-option" data-size="M">M</button>
+                    <button class="size-option font-weight-bold" data-size="G">G</button>
+                    <button class="size-option" data-size="GG">GG</button>
+                </div>
+                
+                <!-- Ações -->
+                <div class="modal-actions-qty">
+                    <div class="modal-qty-ctrl">
+                        <button class="modal-qty-btn" id="modal-qty-minus"><i class="fa-solid fa-minus"></i></button>
+                        <span class="modal-qty-num" id="modal-qty-val">1</span>
+                        <button class="modal-qty-btn" id="modal-qty-plus"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <button class="btn-add-to-cart" id="modal-add-to-cart">
+                        <i class="fa-solid fa-bag-shopping"></i> Adicionar à Sacola
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICAÇÕES TOAST -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts do site -->
+    <script src="app.js"></script>
+</body>
+</html>
