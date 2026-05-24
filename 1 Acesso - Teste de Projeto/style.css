@@ -527,7 +527,7 @@ header.sticky .logo-main {
 
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -825,7 +825,8 @@ header.sticky .logo-main {
     box-shadow: var(--shadow-medium);
     height: 550px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: var(--color-white-pure);
 }
 
 .editorial-content {
@@ -863,7 +864,7 @@ header.sticky .logo-main {
    ========================================================================== */
 
 .booking-section {
-    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.95)), url('assets/about_atelier.png');
+    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.95)), url('assets/hero_banner_carnaval.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

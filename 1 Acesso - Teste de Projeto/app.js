@@ -7,94 +7,48 @@
 const PRODUCTS = [
     {
         id: 1,
-        title: "Vestido Sol de Oxum",
-        category: "afro",
-        price: 489.90,
-        originalPrice: 599.90,
-        badge: "exclusive",
-        image: "assets/hero_banner_afro.png",
-        imageHover: "assets/about_atelier.png",
-        desc: "Um tributo à divindade da beleza e riqueza. Confeccionado em crepe de seda fluído na cor amarelo sol, com drapeado grego sofisticado e aplicações de bordados manuais dourados no decote. Peça com axé, movimento e acabamento de alfaiataria fina.",
+        title: "Body Ouro Imperial",
+        category: "carnaval",
+        price: 429.90,
+        badge: "",
+        image: "assets/carnaval_item_1.jpg",
+        imageHover: "assets/carnaval_item_1.jpg",
+        desc: "Body exclusivo de alta costura confeccionado em lycra cirré dourada com tiras transpassadas feitas à mão, aplicações de pedrarias e franjas de \"bordados\" e vidrilhos. Acompanha adereço de cabeça combinando em penas artificiais amarelas. Uma peça soberana para brilhar na avenida.",
         sizes: ["P", "M", "G"]
     },
     {
         id: 2,
-        title: "Body Purpurina Ouro & Carmim",
+        title: "Body Futurista",
         category: "carnaval",
-        price: 349.90,
-        badge: "new",
-        image: "assets/hero_banner_carnaval.png",
-        imageHover: "assets/about_atelier.png",
-        desc: "Body luxuoso revestido em paetê holográfico de alta densidade nas cores carmim e ouro. Possui forro ultra macio que garante conforto ao dançar, sustentação anatômica no busto e detalhes de franjas nos ombros para um efeito dinâmico na avenida.",
-        sizes: ["P", "M", "G", "GG"]
+        price: 489.90,
+        badge: "",
+        image: "assets/carnaval_item_2.jpg",
+        imageHover: "assets/carnaval_item_2.jpg",
+        desc: "Body futurista de luxo estruturado com ombreiras de asas metálicas prateadas e bustiê decorado artesanalmente com detalhes espelhados circulares. Forro em poliamida premium de alta compressão para perfeita modelagem no corpo.",
+        sizes: ["P", "M", "G"]
     },
     {
         id: 3,
-        title: "Kaftan Imperial Dandara",
-        category: "afro",
-        price: 520.00,
-        badge: "custom",
-        image: "assets/hero_banner_afro.png",
-        imageHover: "assets/about_atelier.png",
-        desc: "Peça icônica com corte amplo imperial, inspirada na realeza angolana. Confeccionada em viscose de alta gramatura com estampas geométricas exclusivas em tons de vermelho, amarelo e verde floresta. Um visual afro-chic luxuoso e marcante.",
-        sizes: ["U"]
+        title: "Vestido Bordado e com Estampa Exclusiva",
+        category: "carnaval",
+        price: 389.90,
+        originalPrice: 450.00,
+        badge: "",
+        image: "assets/carnaval_item_3.png",
+        imageHover: "assets/carnaval_item_3.png",
+        desc: "Body exclusivo de alta costura com tiras transpassadas nas cores verde e rosa, com \"bordados\" manuais brilhantes e franjas de plumas. Perfeito para rainhas de bateria e passistas representarem o samba com leveza e movimento.",
+        sizes: ["P", "M", "G", "GG"]
     },
     {
         id: 4,
-        title: "Coroa de Yemanjá Luxo",
-        category: "acessorios",
-        price: 189.90,
-        originalPrice: 220.00,
-        badge: "exclusive",
-        image: "assets/hero_banner_carnaval.png",
-        imageHover: "assets/about_atelier.png",
-        desc: "Tiara e coroa com design autoral banhado a ouro, ornamentada com pérolas cultivadas, conchas naturais polidas e búzios. Estrutura leve e confortável, ideal para finalizar looks de Carnaval de luxo ou ensaios fotográficos conceituais.",
-        sizes: ["U"]
-    },
-    {
-        id: 5,
-        title: "Conjunto Algodão Ancestral",
+        title: "Kaftan Imperial",
         category: "afro",
-        price: 399.90,
+        price: 520.00,
         badge: "",
-        image: "assets/about_atelier.png",
+        image: "assets/hero_banner_afro.png",
         imageHover: "assets/hero_banner_afro.png",
-        desc: "Conjunto duas peças contendo cropped estruturado com amarração nas costas e calça pantalona de cintura alta. Feito em linho misto ecológico nas cores marrom chocolate e off-white, com detalhes de bordado geométrico feito à mão.",
-        sizes: ["P", "M", "G"]
-    },
-    {
-        id: 6,
-        title: "Saia Plumas Confete & Brilho",
-        category: "carnaval",
-        price: 279.90,
-        badge: "new",
-        image: "assets/hero_banner_carnaval.png",
-        imageHover: "assets/hero_banner_afro.png",
-        desc: "Saia envelope com babados de paetês multicoloridos e acabamento em plumas sintéticas premium na barra. Fechamento ajustável na cintura. Traz o balanço, cor e irreverência clássicos do carnaval carioca em alto estilo.",
-        sizes: ["P", "M", "G"]
-    },
-    {
-        id: 7,
-        title: "Brincos Cascata Búzios Realeza",
-        category: "acessorios",
-        price: 98.00,
-        badge: "custom",
-        image: "assets/about_atelier.png",
-        imageHover: "assets/hero_banner_carnaval.png",
-        desc: "Brincos de cascata maxi feitos com base em metal escovado dourado, pedrarias vermelhas e búzios naturais envoltos em fios de ouro. Leves, marcantes e repletos de simbolismo afro-brasileiro.",
+        desc: "Peça icônica com corte amplo imperial. Confeccionada em viscose de alta gramatura com estampas geométricas exclusivas em tons de vermelho, amarelo e verde floresta. Um visual de moda afro luxuoso e marcante.",
         sizes: ["U"]
-    },
-    {
-        id: 8,
-        title: "Corset Renda & Paetês Bahia",
-        category: "carnaval",
-        price: 249.90,
-        originalPrice: 299.90,
-        badge: "",
-        image: "assets/hero_banner_carnaval.png",
-        imageHover: "assets/about_atelier.png",
-        desc: "Corset com barbatanas flexíveis para modelagem perfeita da silhueta, coberto por renda preta premium sobreposta a paetês dourados e vermelhos. Possui fechamento ajustável por ilhós nas costas.",
-        sizes: ["P", "M", "G"]
     }
 ];
 
@@ -278,7 +232,7 @@ function renderProducts(filter = 'all') {
         : PRODUCTS.filter(p => p.category === filter);
 
     if (filtered.length === 0) {
-        dom.productsGrid.innerHTML = '<p class="cart-empty-message">Nenhum produto cadastrado nesta categoria.</p>';
+        dom.productsGrid.innerHTML = '<p class="cart-empty-message" style="grid-column: 1/-1; padding: 4rem 0; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-light); text-align: center;">Nossa nova coleção de Moda Afro estará disponível em breve. Aguarde!</p>';
         return;
     }
 
@@ -307,12 +261,9 @@ function renderProducts(filter = 'all') {
                 </div>
             </div>
             <div class="product-info">
-                <div class="product-category">${p.category === 'afro' ? 'Moda Afro-Chic' : p.category === 'carnaval' ? 'Carnaval de Luxo' : 'Acessórios'}</div>
+                <div class="product-category">${p.category === 'afro' ? 'Moda Afro' : 'Carnaval'}</div>
                 <h3 class="product-title">${p.title}</h3>
-                <div class="product-price">
-                    ${hasDiscount ? `<span>R$ ${p.originalPrice.toFixed(2).replace('.', ',')}</span>` : ''}
-                    R$ ${p.price.toFixed(2).replace('.', ',')}
-                </div>
+                <div class="product-price">A Combinar</div>
                 <div class="product-details-hover">Tamanhos: ${sizeString}</div>
             </div>
         `;
@@ -378,13 +329,24 @@ function initCart() {
         if (e.target === dom.cartOverlay) closeCart();
     });
 
-    // Ação do Checkout (Apenas Simulado)
+    // Ação do Checkout (Link Direto WhatsApp)
     dom.btnCheckout.addEventListener('click', () => {
         if (cart.length === 0) {
             showToast("Sua sacola está vazia!");
             return;
         }
-        showToast("Encaminhando para pagamento seguro... Obrigado por comprar no Atelier!");
+        
+        let message = "Olá Claudia Atelier! Gostaria de consultar o valor e combinar a confecção das seguintes peças:\n\n";
+        cart.forEach(item => {
+            message += `- ${item.title} (Tamanho: ${item.size}) x${item.qty}\n`;
+        });
+        
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/5521988887777?text=${encodedMessage}`;
+        
+        window.open(whatsappUrl, '_blank');
+        
+        showToast("Redirecionando para o WhatsApp...");
         cart = [];
         saveCart();
         updateCartUI();
@@ -471,9 +433,9 @@ function updateCartUI() {
                 <p style="font-size: 0.8rem; margin-top: 0.5rem;">Explore nossas coleções e encontre peças exclusivas.</p>
             </div>
         `;
-        dom.cartSubtotal.textContent = "R$ 0,00";
-        dom.cartTotal.textContent = "R$ 0,00";
-        dom.shippingMessage.textContent = "Adicione itens para calcular o Frete Grátis";
+        dom.cartSubtotal.textContent = "A Combinar";
+        dom.cartTotal.textContent = "A Combinar";
+        dom.shippingMessage.textContent = "Adicione itens para combinar frete e prazo";
         dom.shippingBarFill.style.width = "0%";
         return;
     }
@@ -492,7 +454,7 @@ function updateCartUI() {
                 <div>
                     <h4 class="cart-item-title">${item.title}</h4>
                     <div class="cart-item-meta">Tamanho: ${item.size}</div>
-                    <div class="cart-item-price">R$ ${item.price.toFixed(2).replace('.', ',')}</div>
+                    <div class="cart-item-price">A Combinar</div>
                 </div>
                 <div class="cart-qty-ctrl">
                     <button class="cart-qty-btn item-minus" data-id="${item.id}" data-size="${item.size}"><i class="fa-solid fa-minus"></i></button>
@@ -527,27 +489,12 @@ function updateCartUI() {
         });
     });
 
-    // 4. Subtotal e Frete Grátis
-    dom.cartSubtotal.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
-    
-    const freeShippingThreshold = 399.00;
-    if (subtotal >= freeShippingThreshold) {
-        dom.shippingMessage.innerHTML = `<i class="fa-solid fa-circle-check" style="color: var(--color-green);"></i> Parabéns! Você ganhou <strong>Frete Grátis</strong>`;
-        dom.shippingBarFill.style.width = "100%";
-        dom.cartTotal.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
-        document.getElementById('cart-shipping-value').textContent = "Grátis";
-    } else {
-        const remaining = freeShippingThreshold - subtotal;
-        dom.shippingMessage.innerHTML = `Faltam R$ ${remaining.toFixed(2).replace('.', ',')} para ganhar <strong>Frete Grátis</strong>`;
-        
-        const percentage = (subtotal / freeShippingThreshold) * 100;
-        dom.shippingBarFill.style.width = `${percentage}%`;
-        
-        const shippingCost = 25.00; // Frete Simulado
-        const total = subtotal + shippingCost;
-        document.getElementById('cart-shipping-value').textContent = `R$ ${shippingCost.toFixed(2).replace('.', ',')}`;
-        dom.cartTotal.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
-    }
+    // 4. Subtotal e Frete (Todos sob consulta / A Combinar)
+    dom.cartSubtotal.textContent = "A Combinar";
+    document.getElementById('cart-shipping-value').textContent = "A Combinar";
+    dom.cartTotal.textContent = "A Combinar";
+    dom.shippingMessage.innerHTML = `<i class="fa-solid fa-truck" style="color: var(--color-yellow);"></i> Frete e prazo de entrega a combinar com o atelier`;
+    dom.shippingBarFill.style.width = "100%";
 }
 
 // F. MODAL DE VISUALIZAÇÃO RÁPIDA (QUICK VIEW)
@@ -608,9 +555,9 @@ function openQuickView(id) {
     // Preencher modal
     dom.modalImg.src = product.image;
     dom.modalImg.alt = product.title;
-    dom.modalCat.textContent = product.category === 'afro' ? 'Moda Afro-Chic' : product.category === 'carnaval' ? 'Carnaval de Luxo' : 'Acessórios';
+    dom.modalCat.textContent = product.category === 'afro' ? 'Moda Afro' : 'Carnaval';
     dom.modalTitle.textContent = product.title;
-    dom.modalPrice.textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+    dom.modalPrice.textContent = "A Combinar";
     dom.modalDesc.textContent = product.desc;
 
     // Configurar Tamanhos
@@ -646,7 +593,7 @@ function initForms() {
 
         const formData = new FormData(dom.bookingForm);
 
-        fetch("https://formspree.io/f/mykvpbjg", {
+        fetch("https://n8n.srv1663554.hstgr.cloud/webhook/52c06cab-b197-48a3-89d0-d414979cac41", {
             method: "POST",
             body: formData,
             headers: {
