@@ -29,7 +29,7 @@ const PRODUCTS = [
     },
     {
         id: 3,
-        title: "Vestido Bordado e com Estampa Exclusiva",
+        title: "Vestido feito a mão",
         category: "carnaval",
         price: 389.90,
         originalPrice: 450.00,
@@ -49,6 +49,28 @@ const PRODUCTS = [
         imageHover: "assets/hero_banner_afro.png",
         desc: "Peça icônica com corte amplo imperial. Confeccionada em viscose de alta gramatura com estampas geométricas exclusivas em tons de vermelho, amarelo e verde floresta. Um visual de moda afro luxuoso e marcante.",
         sizes: ["U"]
+    },
+    {
+        id: 5,
+        title: "Vestido Rendado Lavanda Sob Medida",
+        category: "casamento",
+        price: 750.00,
+        badge: "custom",
+        image: "assets/casamento_15anos.jpg",
+        imageHover: "assets/casamento_15anos.jpg",
+        desc: "Vestido de festa exclusivo confeccionado sob medida com renda floral lavanda e base nude. Perfeito para madrinhas, mães de noivos e debutantes que buscam elegância e sofisticação clássica.",
+        sizes: ["P", "M", "G", "GG"]
+    },
+    {
+        id: 6,
+        title: "Vestido Cinza Imperial com Fenda",
+        category: "casamento",
+        price: 820.00,
+        badge: "custom",
+        image: "assets/casamento_15anos_2.jpg",
+        imageHover: "assets/casamento_15anos_2.jpg",
+        desc: "Vestido de alta costura em cetim cinza imperial estruturado com busto rendado e fenda lateral marcante. Uma criação sob medida perfeita para eventos de destaque e debutantes.",
+        sizes: ["P", "M", "G", "GG"]
     }
 ];
 
@@ -232,7 +254,11 @@ function renderProducts(filter = 'all') {
         : PRODUCTS.filter(p => p.category === filter);
 
     if (filtered.length === 0) {
-        dom.productsGrid.innerHTML = '<p class="cart-empty-message" style="grid-column: 1/-1; padding: 4rem 0; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-light); text-align: center;">Nossa nova coleção de Moda Afro estará disponível em breve. Aguarde!</p>';
+        let msg = "Nossa nova coleção estará disponível em breve. Aguarde!";
+        if (filter === 'afro') msg = "Nossa nova coleção de Moda Afro estará disponível em breve. Aguarde!";
+        else if (filter === 'carnaval') msg = "Nossa nova coleção de Carnaval estará disponível em breve. Aguarde!";
+        else if (filter === 'casamento') msg = "Nossa coleção de Casamento e 15 Anos sob medida estará disponível em breve. Agende seu atendimento!";
+        dom.productsGrid.innerHTML = `<p class="cart-empty-message" style="grid-column: 1/-1; padding: 4rem 0; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-light); text-align: center;">${msg}</p>`;
         return;
     }
 
@@ -261,7 +287,7 @@ function renderProducts(filter = 'all') {
                 </div>
             </div>
             <div class="product-info">
-                <div class="product-category">${p.category === 'afro' ? 'Moda Afro' : 'Carnaval'}</div>
+                <div class="product-category">${p.category === 'afro' ? 'Moda Afro' : (p.category === 'casamento' ? 'Casamento & 15 Anos' : 'Carnaval')}</div>
                 <h3 class="product-title">${p.title}</h3>
                 <div class="product-price">A Combinar</div>
                 <div class="product-details-hover">Tamanhos: ${sizeString}</div>
@@ -342,7 +368,7 @@ function initCart() {
         });
         
         const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/5521988887777?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/5521964312922?text=${encodedMessage}`;
         
         window.open(whatsappUrl, '_blank');
         
@@ -555,7 +581,7 @@ function openQuickView(id) {
     // Preencher modal
     dom.modalImg.src = product.image;
     dom.modalImg.alt = product.title;
-    dom.modalCat.textContent = product.category === 'afro' ? 'Moda Afro' : 'Carnaval';
+    dom.modalCat.textContent = product.category === 'afro' ? 'Moda Afro' : (product.category === 'casamento' ? 'Casamento & 15 Anos' : 'Carnaval');
     dom.modalTitle.textContent = product.title;
     dom.modalPrice.textContent = "A Combinar";
     dom.modalDesc.textContent = product.desc;
