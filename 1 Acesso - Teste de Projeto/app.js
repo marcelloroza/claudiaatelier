@@ -593,7 +593,7 @@ function initForms() {
 
         const formData = new FormData(dom.bookingForm);
 
-        fetch("https://n8n.srv1663554.hstgr.cloud/webhook/52c06cab-b197-48a3-89d0-d414979cac41", {
+        fetch("https://n8n.srv1663554.hstgr.cloud/webhook-test/6baec3a9-75e2-4497-b0bc-b239918b1410", {
             method: "POST",
             body: formData,
             headers: {
