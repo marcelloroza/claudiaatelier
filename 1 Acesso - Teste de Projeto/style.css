@@ -51,6 +51,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 body {
@@ -1758,6 +1759,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .filter-bar {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-bottom: 2.5rem;
+    }
+    .filter-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
     .header-container {
         padding: 1rem;
     }
