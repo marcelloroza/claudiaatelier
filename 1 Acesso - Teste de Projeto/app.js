@@ -619,7 +619,7 @@ function initForms() {
 
         const formData = new FormData(dom.bookingForm);
 
-        fetch("http://localhost:5678/webhook/6baec3a9-75e2-4497-b0bc-b239918b1410", {
+        fetch("http://2.24.93.134:5678/webhook/6baec3a9-75e2-4497-b0bc-b239918b14110", {
             method: "POST",
             body: formData,
             headers: {
