@@ -619,7 +619,7 @@ function initForms() {
 
         const formData = new FormData(dom.bookingForm);
 
-        fetch("https://n8n.inforoza.com.br/form-test/982d4cdd-b1f1-4cfb-8eb4-3fd7be8fa14b", {
+        fetch("https://n8n.inforoza.com.br/webhook-test/a00fb24b-bec6-47ee-a880-af7a81c26477", {
             method: "POST",
             body: formData,
             headers: {
